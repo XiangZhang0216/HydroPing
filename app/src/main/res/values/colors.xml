@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#40C9FF</color>
+    <color name= "manstage0">#FF0000</color>
+    <color name= "manstage1">#FF3200</color>
+    <color name= "manstage2">#FF3C00</color>
+    <color name= "manstage3">#FF5900</color>
+    <color name= "manstage4">#FF8300</color>
+    <color name= "manstage5">#FFB700</color>
+    <color name= "manstage6">#FFE600</color>
+    <color name= "manstage7">#F7FF00</color>
+    <color name= "manstage8">#D0FF00</color>
+    <color name= "manstage9">#9DFF00</color>
+    <color name= "manstage10">#77FF00</color>
+    <color name= "botstage0">#0020A3</color>
+    <color name= "botstage1">#0042C0</color>
+    <color name= "botstage2">#0066C0</color>
+    <color name= "botstage3">#0A7CE0</color>
+    <color name= "botstage4">#0F91E9</color>
+    <color name= "botstage5">#12A4F3</color>
+    <color name= "botstage6">#2E9EEC</color>
+    <color name= "botstage7">#42ABF1</color>
+    <color name= "botstage8">#2EBAF3</color>
+    <color name= "botstage9">#66D0FC</color>
+    <color name= "botstage10">#76EEFF</color>
+</resources>

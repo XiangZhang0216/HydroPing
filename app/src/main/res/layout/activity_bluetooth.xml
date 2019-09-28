@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/lvNewDevices"></ListView>
+    <!--EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:id="@+id/editText"/!-->
+    <!--Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/btnSend"
+        android:layout_gravity="center"/!-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/circleGauge"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            app:gaugeStartAngle = "270"
+            app:gaugeStartValue="0"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/colorAccent"
+            app:gaugePointStartColor="@color/colorPrimary"
+
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeWidth="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="30dp"
+            android:layout_alignBottom="@+id/circleGauge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/gaugeCenterText"
+            android:textColor="@color/botstage0"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/gaugeTextView"
+
+        android:text="Volume in bottle: 0ml\nVolume drank: 0ml\nTarget: 1000ml \nHydration: 0%"/>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vol: 0ml"
+                android:layout_marginTop="30dp"
+                android:textSize="50px"
+                android:textColor="@color/botstage10"
+                android:layout_marginLeft="20px"
+                android:paddingLeft="20px"
+                android:id="@+id/bottleTextView"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/bottle_stage10"
+            android:layout_height="100dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/bottleImageView">
+
+        </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="103dp"
+                android:src="@drawable/man_stage0"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/manImageView"/>
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_gravity="right">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="H20:\n0%"
+                android:textSize="50px"
+                android:textColor="@color/manstage0"
+                android:id="@+id/manTextView"
+
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:id="@+id/incomingMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hydration Logs"
+            android:layout_gravity="center_horizontal"
+
+
+
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        >
+
+        <!--Button
+            android:id="@+id/BTSDiscoverabilityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnEnableDisable_Discoverable"
+            android:text="Visible" /!-->
+        <Switch
+            android:id="@+id/BTSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="BT Connection"
+            android:textSize="15dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFindUplairedDevices"
+            android:text="Pair Bottle"
+            android:onClick="btnDiscover"
+            android:layout_gravity="right"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnReboot"
+            android:text="Reboot"
+
+            android:textColor="@color/manstage0"/>
+        <!--Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartConnection"
+            android:text="Connect"/!-->
+        <!--Button
+            android:id="@+id/LogsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify" /!-->
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
